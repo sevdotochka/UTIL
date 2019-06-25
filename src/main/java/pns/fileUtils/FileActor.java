@@ -104,8 +104,7 @@ public class FileActor {
     }
 
     /**
-     * if isAppSubDirPath==true, the object works with the directory subDir of
-     * currentDir, else it works in the tunned directory
+     * if isAppSubDirPath==true, the object works with the directory subDir of currentDir, else it works in the tunned directory
      * <br />
      * default isAppSubDirPath value is false
      *
@@ -157,8 +156,7 @@ public class FileActor {
     }
 
     /**
-     * Generates full file name in standard format : DIRNAME/min-sec-milisec
-     * Firstly it's need to create the DIRNAME
+     * Generates full file name in standard format : DIRNAME/min-sec-milisec Firstly it's need to create the DIRNAME
      */
     public void fullFilePath() {
         String volRoot = getRootPath();
@@ -656,6 +654,7 @@ public class FileActor {
 
                 //System.out.println("line : " + line);
             }
+            fileContent = stringBuffer.toString();
         } catch (IOException ex) {
             System.out.println(" ex : " + ex.getMessage());
         }
@@ -663,8 +662,7 @@ public class FileActor {
     }
 
     /**
-     * Read the file from fname and puts it content to the
-     * (StringBuffer)stringBuffer field
+     * Read the file from fname and puts it content to the (StringBuffer)stringBuffer field
      */
     public Boolean fileRead(String fname) {
         String line = "";
@@ -705,8 +703,7 @@ public class FileActor {
     }
 
     /**
-     * Read the file from fname and puts it content to the
-     * (StringBuffer)stringBuffer field
+     * Read the file from fname and puts it content to the (StringBuffer)stringBuffer field
      */
     public Boolean fileReadUTF(String fname) {
         String line = "";
@@ -747,8 +744,7 @@ public class FileActor {
     }
 
     /**
-     * Read the file from fname and puts it content to the
-     * (StringBuffer)stringBuffer field
+     * Read the file from fname and puts it content to the (StringBuffer)stringBuffer field
      */
     public Boolean fileRead(String fname, String encoding) {
         String line = "";
@@ -788,8 +784,7 @@ public class FileActor {
     }
 
     /**
-     * Generate Standard Directory Name of format :
-     * DATADIR/YYYY/MM/DD/RandomString
+     * Generate Standard Directory Name of format : DATADIR/YYYY/MM/DD/RandomString
      *
      * @return
      */
@@ -820,8 +815,7 @@ public class FileActor {
     }
 
     /**
-     * Generate Standard Directory Name of format :
-     * DATADIR/YYYY/MM/DD/RandomString
+     * Generate Standard Directory Name of format : DATADIR/YYYY/MM/DD/RandomString
      *
      * @return
      */
