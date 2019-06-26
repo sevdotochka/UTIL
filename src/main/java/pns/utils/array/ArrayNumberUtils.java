@@ -77,4 +77,11 @@ public class ArrayNumberUtils {
         return res;
     }
 
+    public static double makeSumm(double[] args) {
+        double res = 0;
+        for (double d : args) {
+            res += d;
+        }
+        return res;
+    }
 }
